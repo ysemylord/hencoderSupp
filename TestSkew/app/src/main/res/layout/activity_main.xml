@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.netease.coverage.myapplication.MainActivity">
+
+    <RelativeLayout
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/reset_rotate_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重置x" />
+
+        <Button
+            android:id="@+id/btn_x_cw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reset_rotate_x"
+            android:text="绕X轴顺时针转动" />
+
+        <Button
+            android:id="@+id/btn_x_cw_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_x_cw"
+            android:text="绕X轴逆时针转动" />
+
+        <TextView
+            android:id="@+id/x_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/btn_x_cw"
+            android:layout_toRightOf="@id/btn_x_cw"
+            tools:text="12233" />
+    </RelativeLayout>  <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/reset_rotate_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重置y" />
+
+        <Button
+            android:id="@+id/btn_y_cw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reset_rotate_y"
+            android:text="绕y轴顺时针转动" />
+
+        <Button
+            android:id="@+id/btn_y_cw_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_y_cw"
+            android:text="绕y轴逆时针转动" />
+
+        <TextView
+            android:id="@+id/y_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/btn_y_cw"
+            android:layout_toRightOf="@id/btn_y_cw"
+            tools:text="12233" />
+    </RelativeLayout>
+
+    <com.netease.coverage.myapplication.Practice14FlipboardView
+        android:id="@+id/flipboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
